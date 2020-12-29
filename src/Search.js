@@ -49,7 +49,7 @@ class Search extends Component {
           placeholder="Search with name..."
           ref={input => this.search = input}
         />
-        <button onClick={this.handleClick}>Search</button>
+        <button className="firstButton" onClick={this.handleClick}>Search</button>
       </form>
       <p>{this.state.query} {text}</p>
       </>

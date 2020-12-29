@@ -29,18 +29,21 @@ function Alphabetical(props) {
             <table>
                 <thead>
                 <tr>
-                    <th>Nimi</th>
-                    <th>Lukumäärä</th>
+                    <th>Name</th>
+                    <th>Amount</th>
                 </tr>
-                </thead>               
+                </thead>   
+                <tbody>        
               {items.map(item => (
-                <tbody  key={item.name}>
-                  <tr>
-                <th>
-                {item.name}</th>
-                 <th>{item.amount}</th>
-                 </tr></tbody>
+                
+                  <tr key={item.name}>
+                <td>
+                {item.name}</td>
+                 <td>{item.amount}</td>
+                 </tr>
+                 
                ))}
+               </tbody>
             </table>
           </>
         );
