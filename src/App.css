@@ -29,8 +29,14 @@ th {
 }
 
 .firstButton {
-  border-radius: 12px;
+  border-radius: 14px;
   font-size: 14px;
-  background-color: #4DA8DA;    
+  background-color:#007CC7;    
   color: #EEFBFB;
+  margin: 0.25em;
+}
+
+.inputField {
+  border-radius: 14px;
+  font-size: 14px;
 }

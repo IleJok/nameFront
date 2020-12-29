@@ -45,7 +45,7 @@ class Search extends Component {
     return (
         <>
       <form>
-        <input
+        <input className="inputField"
           placeholder="Search with name..."
           ref={input => this.search = input}
         />
