@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Name Application",
+  "name": "Name Application for Solita's dev academy",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
