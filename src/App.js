@@ -3,19 +3,22 @@ import React, {Suspense} from "react";
 import Search from './Search';
 
 const AlphaComponent = React.lazy(() => import('./Alphabetical'));
+const TotalComponent = React.lazy(() => import('./Total'));
 
 
 function App() {
     return (
       <div className="App">
-        <h1>Solitalaisten nimet</h1>
+        <h1>Name application</h1>
           <Suspense fallback={<div>Loading...</div>}>        
-          <h2>Nimet yleisimmästä harvinaisimpaan</h2>
+          <h2>List of most popular names</h2>
           <AlphaComponent site="/"/>                   
-          <h2>Nimet aakkosjärjestyksessä</h2>
+          <h2>Names in alphabetical order</h2>
           <AlphaComponent site="/alphabetical"/>
-          <h2>Hae nimellä</h2>
-          <Search></Search>
+          <h2>Total amount of all names</h2>
+          <TotalComponent/>
+          <h2>Search with names</h2>
+          <Search/>
           </Suspense>
       </div>
     );

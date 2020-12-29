@@ -6,7 +6,9 @@ class Search extends Component {
   state = {
     query: '',
     results: "",
-    finished: false
+    finished: false,
+    errorMessage: null,
+    error: false
   }
 
   getInfo = () => {
@@ -19,7 +21,6 @@ class Search extends Component {
         })
       })
     }
-  
 
   handleClick = (e) => {
     e.preventDefault();
@@ -38,21 +39,20 @@ class Search extends Component {
     if (this.state.finished) {
         text = this.state.results;
     } else {
-        text = "Tässä näytetään lukumäärä kun olet hakenut";
+        text = "Here you will see the name and amount after you have clicked search";
     }
 
     return (
-        <div>
+        <>
       <form>
         <input
-          placeholder="Hae nimellä..."
+          placeholder="Search with name..."
           ref={input => this.search = input}
         />
-        <button name="Hae" onClick={this.handleClick}>Hae</button>
+        <button onClick={this.handleClick}>Search</button>
       </form>
       <p>{this.state.query} {text}</p>
-      
-      </div>
+      </>
     )
   }
 }
