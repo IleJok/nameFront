@@ -1,4 +1,6 @@
 import {useEffect, useState} from "react";
+
+/*To display names in alphabetical or in popularity order*/
 function Alphabetical(props) {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);

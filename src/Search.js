@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 const url = "https://localhost:44304/name/count/";
-
+/*Component to search for names in Solita*/
 class Search extends Component {
   state = {
     query: '',
